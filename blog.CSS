@@ -1,0 +1,110 @@
+:root {
+    --background-light: #ffffff;
+    --background-dark: #363537;
+    --text-color-light: #363537;
+    --text-color-dark: #ffffff;
+    --primary-color-light: blueviolet; /* Or any color you use for elements like buttons */
+    --primary-color-dark: yellow;
+  }
+  
+  .dark-mode, .dark-mode header {
+    background-color: var(--background-dark);
+    color: var(--text-color-dark);
+}
+
+.light-mode, .light-mode header {
+    background-color: var(--background-light);
+    color: var(--text-color-light);
+}
+
+
+  #theme-toggle {
+    cursor: pointer;
+    padding: 10px 20px;
+    background: var(--primary-color-light);
+    color: var(--text-color-dark);
+    border: none;
+    border-radius: 5px;
+    margin-left: 450px;
+    font-weight: bold;
+  }
+  
+  #theme-toggle:hover {
+    background: darkslategrey;
+  }
+  
+
+
+  .light-mode {
+    background-color: var(--background-light);
+    color: var(--text-color-light);
+  }
+  
+  .dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-color-dark);
+  }  
+
+.blog-header {
+    background-color: #f8f9fa; /* Light grey background */
+    border-bottom: 1px solid #e5e5e5; /* Bottom border */
+    padding: 10px 20px; /* Some padding */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space the title and back button */
+    align-items: center; /* Center items vertically */
+}
+
+.blog-header h1 {
+    margin: 0;
+    font-size: 24px; /* Large font size for the blog title */
+    color: #333; /* Dark grey color for the text */
+}
+
+.back-button {
+    display: inline-block;
+    background-color: blueviolet; 
+    color: var(--text-color-dark); 
+    padding: 8px 15px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-weight: bold; 
+}
+
+.back-button:hover {
+    background-color: red;
+}
+
+.light-mode #Header-Text {
+    color: var(--text-color-light); 
+ }
+  
+  .dark-mode #Header-Text {
+    color: var(--text-color-dark); 
+ }
+
+
+html, body {
+    height: 100%; /* Ensures the html and body are full height */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-header, .blog-footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.blog-content {
+    flex: 1; /* Ensures that the main content expands to fill the available space */
+    padding: 20px;
+    overflow-y: auto; /* Allows scrolling within the main content area if needed */
+}
+
+.blog-footer {
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
